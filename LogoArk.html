@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logo Ark Collective - Home</title>
+        <style>
+            /* Common Styles */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                overflow-x: hidden;
+            }
+
+            header {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background: white;
+                z-index: 1000;
+                padding: 1rem;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            .nav-links {
+                display: flex;
+                gap: 2rem;
+            }
+
+            section {
+                min-height: 100vh;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .big-text {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            .small-text {
+                font-size: 1.2rem;
+                max-width: 800px;
+                text-align: center;
+            }
+
+            /* Horizontal Scroll Styles */
+            .horizontal-container {
+                position: relative;
+                height: 500vh;
+            }
+
+            .horizontal-wrapper {
+                position: sticky;
+                top: 0;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            .horizontal-sections {
+                display: flex;
+                position: absolute;
+                height: 100vh;
+                transition: transform 0.1s ease-out;
+            }
+
+            .horizontal-section {
+                width: 100vw;
+                height: 100vh;
+                flex-shrink: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            /* Section Color Styles */
+            .intro-section {
+                background-color: #f0f7ff;
+                color: #2c5282;
+            }
+
+            .horizontal-sections .horizontal-section:nth-child(1) {
+                background-color: #fcba03;
+                color: #ffffff;
+            }
+
+            .horizontal-sections .horizontal-section:nth-child(2) {
+                background-color: #ffd347;
+                color: #ffffff;
+            }
+
+            .horizontal-sections .horizontal-section:nth-child(3) {
+                background-color: #fcba03;
+                color: #ffffff;
+            }
+
+            .horizontal-sections .horizontal-section:nth-child(4) {
+                background-color: #ffd347;
+                color: #ffffff;
+            }
+
+            .horizontal-sections .horizontal-section:nth-child(5) {
+                background-color: #fcba03;
+                color: #ffffff;
+            }
+
+            .testimonials-section {
+                background-color: #f7fafc;
+                color: #2d3748;
+            }
+
+            /* Partner Section Styles */
+            .partner-container {
+                position: relative;
+                height: 400vh;
+            }
+
+            .partner-wrapper {
+                position: sticky;
+                top: 0;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            .partner-sections {
+                display: flex;
+                position: absolute;
+                height: 100vh;
+                width: 400vw;
+                transition: transform 0.1s ease-out;
+            }
+
+            .partner-section {
+                width: 100vw;
+                height: 100vh;
+                flex-shrink: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .partner-sections .partner-section:nth-child(1) {
+                background-color: #fff5f5;
+                color: #822727;
+            }
+
+            .partner-sections .partner-section:nth-child(2) {
+                background-color: #fff0f0;
+                color: #822727;
+            }
+
+            .partner-sections .partner-section:nth-child(3) {
+                background-color: #fff5f5;
+                color: #822727;
+            }
+
+            .partner-sections .partner-section:nth-child(4) {
+                background-color: #fff0f0;
+                color: #822727;
+            }
+
+            .team-section {
+                background-color: #faf5ff;
+                color: #553c9a;
+            }
+
+            .projects-section {
+                background-color: #fffaf0;
+                color: #744210;
+            }
+
+            footer {
+                background: #333;
+                color: white;
+                padding: 2rem;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">Logo Ark Collective</div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="logo-requests.html">Logo Requests</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="branding.html">Branding</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="about.html">Who We Are</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Introduction Section -->
+        <section class="intro-section" style="margin-top: 60px;">
+            <h1 class="big-text">Designing logos that make a difference</h1>
+            <p class="small-text">Brief overview of the organization and its mission</p>
+        </section>
+
+        <!-- Recent Designs (Horizontal Scroll) -->
+        <div class="horizontal-container">
+            <div class="horizontal-wrapper">
+                <div class="horizontal-sections">
+                    <div class="horizontal-section">Recent Design 1</div>
+                    <div class="horizontal-section">Recent Design 2</div>
+                    <div class="horizontal-section">Recent Design 3</div>
+                    <div class="horizontal-section">Recent Design 4</div>
+                    <div class="horizontal-section">Recent Design 5</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <h2 class="big-text">What People Are Saying</h2>
+            <div class="small-text">Individual testimonials and notable mentions</div>
+        </section>
+
+        <!-- Partner Sections (Horizontal Scroll) -->
+        <div class="partner-container">
+            <div class="partner-wrapper">
+                <div class="partner-sections">
+                    <div class="partner-section">Partner Section 1</div>
+                    <div class="partner-section">Partner Section 2</div>
+                    <div class="partner-section">Partner Section 3</div>
+                    <div class="partner-section">Partner Section 4</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <h2 class="big-text">Meet the Team</h2>
+            <div class="small-text">Team member profiles and information</div>
+        </section>
+
+        <!-- Other Projects -->
+        <section class="projects-section">
+            <h3 class="big-text">Scribbles Cubed</h3>
+        </section>
+        
+        <section class="projects-section">
+            <h3 class="big-text">Illinois Flag Submissions</h3>
+            <div class="scribbles-grid">
+                <img src="/api/placeholder/300/300" alt="Scribble 1" class="scribble-image">
+                <img src="/api/placeholder/300/300" alt="Scribble 2" class="scribble-image">
+                <img src="/api/placeholder/300/300" alt="Scribble 3" class="scribble-image">
+                <img src="/api/placeholder/300/300" alt="Scribble 4" class="scribble-image">
+                <img src="/api/placeholder/300/300" alt="Scribble 5" class="scribble-image">
+                <img src="/api/placeholder/300/300" alt="Scribble 6" class="scribble-image">
+                <img src="/api/placeholder/300/300" alt="Scribble 7" class="scribble-image">
+                <img src="/api/placeholder/300/300" alt="Scribble 8" class="scribble-image">
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p class="small-text">&copy; 2024 Logo Ark Collective</p>
+            <p class="small-text">John 3:16</p>
+            <div>
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="report-abuse.html">Report Abuse</a>
+            </div>
+        </footer>
+
+        <script>
+            window.addEventListener('scroll', () => {
+                // First horizontal scroll (Recent designs)
+                const horizontalContainer = document.querySelector('.horizontal-container');
+                const horizontalSections = document.querySelector('.horizontal-sections');
+                
+                if (horizontalContainer) {
+                    const containerRect = horizontalContainer.getBoundingClientRect();
+                    const containerTop = containerRect.top;
+                    const containerHeight = containerRect.height;
+                    
+                    if (containerTop <= 0 && containerTop >= -containerHeight + window.innerHeight) {
+                        const scrollProgress = -containerTop / (containerHeight - window.innerHeight);
+                        const translateX = -(scrollProgress * (100 * 4));  // 4 = number of sections minus 1
+                        horizontalSections.style.transform = `translateX(${translateX}vw)`;
+                    }
+                }
+
+                // Partner sections horizontal scroll
+                const partnerContainer = document.querySelector('.partner-container');
+                const partnerSections = document.querySelector('.partner-sections');
+                
+                if (partnerContainer) {
+                    const containerRect = partnerContainer.getBoundingClientRect();
+                    const containerTop = containerRect.top;
+                    const containerHeight = containerRect.height;
+                    
+                    if (containerTop <= 0 && containerTop >= -containerHeight + window.innerHeight) {
+                        const scrollProgress = -containerTop / (containerHeight - window.innerHeight);
+                        const translateX = -(scrollProgress * (100 * 3));  // 3 = number of sections minus 1
+                        partnerSections.style.transform = `translateX(${translateX}vw)`;
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
